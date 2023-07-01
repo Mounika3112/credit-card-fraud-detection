@@ -4,6 +4,7 @@ Credit card firms must detect fraudulent credit card transactions to prevent con
 We will be using the Credit Card Fraud Detection Dataset from Kaggle. The dataset utilized covers credit card transactions done by European cardholders in September 2013. This dataset contains 492 frauds out of 284,807 transactions over two days. The dataset is unbalanced, with the positive class (frauds) accounting for 0.172 percent of all transactions.
 
 Conclusion
+
 This trained different classifiers and performed undersampling and oversampling techniques after splitting the data into training and test sets to decide which classifier is more effective in detecting fraudulent transactions.
 
 GridSearchCV takes a lot of time and is therefore only effective in undersampling since undersampling does not take much time during training. If you find it's taking forever on a particular model, consider reducing the parameters you've passed, and use RandomizedSearchCV for that (i.e., setting is_grid_search to False on our core function).
